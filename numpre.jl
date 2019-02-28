@@ -19,6 +19,9 @@ function strtobord(str)
     bord,initial_bord
 end
 
+
+#https://www.kaggle.com/bryanpark/sudoku
+
 prob="004300209005009001070060043006002087190007400050083000600000105003508690042910300"
 sol="864371259325849761971265843436192587198657432257483916689734125713528694542916378"
 
@@ -54,6 +57,12 @@ end
 
 
 b,bb=strtobord(sol)
+
+for i in 1:9
+    println(bb[i,:])
+end
+#Base.showarray(STDOUT,bb,false)
+
 
 
 
